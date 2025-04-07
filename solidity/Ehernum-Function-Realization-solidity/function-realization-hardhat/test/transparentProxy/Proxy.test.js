@@ -23,7 +23,7 @@ describe("Proxy Upgrade Pattern", function () {
         
         // 部署V2实现合约
         const ImplementationV2 = await ethers.getContractFactory("ImplementationV2");
-        implementationV2 = await ImplementationV2.deploy("V2 Initial Message");
+        implementationV2 = await ImplementationV2.deploy();
     });
 
     describe("Initial State", function () {
