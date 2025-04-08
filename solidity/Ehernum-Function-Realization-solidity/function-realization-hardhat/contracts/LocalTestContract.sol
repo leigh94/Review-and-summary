@@ -1,19 +1,18 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.29;
+pragma solidity ^0.8.20;
 
-/// @title 初始化项目 测试
+/// @title 初始化项目 本地测试
 /// @author Leigh
 /// @notice 测试
 /// @dev Test
-contract MyContract {
+contract LocalTestContract {
     string public message;
 
-    constructor(string memory _message) {
-        message = _message;
-    }
+    event MessageChanged(string newMessage);
 
     function setMessage(string memory _newmessage) public {
         message = _newmessage;
+        emit MessageChanged(message);
     }
 
     function getMessage() public view returns (string memory){
