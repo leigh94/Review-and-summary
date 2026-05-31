@@ -6,13 +6,6 @@
 
 </br></br></br></br>
 
-### [java](./java/README.md)  
-
-</br></br></br></br>
-
-### [python](/python/README.md)  
-
-</br></br></br></br>
 
 ### [solidity](./solidity/README.md)  
 
